@@ -1,1 +1,4 @@
-/ 100
+65 / 100
+part1 20 part2 30 part3 15
+part1: non executable in the current
+part3: not working with absoulte path, crashes with or without multiple parameters

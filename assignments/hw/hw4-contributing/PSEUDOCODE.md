@@ -23,17 +23,42 @@ What are some advantages of pseudocode?
   <li>Communicate your ideas to gain opinions/suggestions from other programmers</li>
 </ol>
 
+Although there are no real rules for pseudocode I will give a couple basic rules I use for each pseudocode example.
 
 Examples of pseudocode and when to use them
 -------------------------------------------
+1. Write your code out in your written/verbal language.
+Rules:
+<ol>
+  <li>Write so it is easy for others to understand</li>
+  <li>Write so you can walk away from this project, pick it up another day and be able to understand your plan</li>
+  <li>Write related ideas without blank line between them, put blank lines between ideas that are less/not related</li>
+  <li>Start your pseudocode with what your code is suppose to accomplish</li>
+</ol>
 
+What is my code suppose to accomplish?
+The code needs to creat two neurons. One neuron will receive a sin wave for some amount of time. The neurons will have recursive excitatory synapses... meaning: sin_wave -> neuron1 <-> neuron2.
+
+A neuron is defined as a cell with these qualities...
+
+Neurons are connected in this way...
+Synapse qualities...
+
+OSCAR!! Add more
+
+2. Flowchart pseudocode
+OSCAR!! See example in link
+http://www.owlnet.rice.edu/~ceng303/manuals/fortran/FOR3_3.html
+
+3. This example of pseudocode is mostly full of code
+OSCAR!! See example in link
+http://en.wikipedia.org/wiki/Pseudocode#Syntax
 
 NOTES:
-How do I add code to md?
+OSCAR!! How do I add video of my programs output?
+Example:
+![Output sample](https://github.com/ajasmin/camstudio-mousedown-highlight/raw/master/android_vid_test.gif)
 
-How can I add more structure?
-
-How do I add video of my programs output?
 
 ```C++
 #include <stdio.h>

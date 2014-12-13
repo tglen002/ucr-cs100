@@ -32,5 +32,54 @@ How can I add more structure?
 How do I add video of my programs output?
 
 ```C++
-simple_model.cxx
+#include <stdio.h>
+#include <stdlib.h> 
+#include <math.h> 
+#include <map>
+
+using namespace std;
+
+#define   ncellType1	1   
+#define   ncellType2	1
+#define   iters		3000
+#define	  g_ampa_CT1CT2 0.00068
+#define	  g_ampa_CT2CT1 0.00068
+#define   g_ampa_CT1DCpulse 1.0
+#define   range_left	500
+#define   range_right	1000
+#define   dc_amplitude	0.1
+#define	  a_sin		0.4
+#define   sin_bx	0.076
+#define	  trial		10
+
+const int trials[trial] = {0,5000,10000,15000,20000,25000,30000,35000,40000,45000};
+
+//-- Regular spiking neuron---------------------------------------
+class RS{
+  double y, xp, xpp, sigma_n, beta_n;
+public:
+  double alpha, x;	
+  double sigma, sigma_e, beta_e, S_CX_DEND, mu;
+  int spike;	
+
+  RS(){ init(); }
+
+  void init(){
+    spike=0;
+    mu=0.0005;		
+    alpha=3.65; 	
+    sigma=0.06;	
+    sigma_e=1.0;
+    beta_e=0.03;
+    S_CX_DEND = 165.0e-6;
+
+    //initial conditions
+    xpp=-1+sigma;
+    xp=-1+sigma;
+    x=-1+sigma;
+    y= x - alpha/(1-x);
+  }
+  inline void calc(double);
+};
+
 ```
